@@ -324,11 +324,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "base_url", function() { return base_url; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "add_url", function() { return add_url; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "add_contact", function() { return add_contact; });
-<<<<<<< HEAD
-const base_url = "http://bitrl.herokuapp.com/v1/";
-=======
 const base_url = "https://bitrl.herokuapp.com/v1/";
->>>>>>> master
 // export const base_url = "http://localhost:8081/v1/";
 //url
 const add_url = "url/add-url";
