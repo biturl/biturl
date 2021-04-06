@@ -74,7 +74,7 @@ module.exports = "<div class=\"container-fluid p-0\">\n    <nav class=\"navbar f
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\" style=\"position: relative; top: 100px;\">\n    <div class=\"row\">\n        <div class=\"col-md-12\">\n            <p id=\"homename\">Biturl</p>\n        </div>\n        <div class=\"col-md-12\">\n                <p id=\"tagname\">Professional Url shortener service.</p>\n        </div>\n    </div>\n    <form [formGroup]=\"urlForm\">\n        <div class=\"input-group mb-3\">\n            <input type=\"text\" class=\"form-control\" placeholder=\"Enter Url\" aria-label=\"Recipient's username\"\n                aria-describedby=\"basic-addon2\" formControlName=\"url\" [(ngModel)]=\"urlData.url\">\n            <span class=\"input-group-text\" id=\"basic-addon2\">\n                <button type=\"button\" class=\"btn btn-primary\" (click)=\"onShort()\">Shorten</button>\n            </span>\n        </div>\n        <div class=\"input-group mb-3\" *ngIf=\"shortUrl\">\n                <input type=\"text\" class=\"form-control\" placeholder=\"Enter Url\" aria-label=\"Recipient's username\"\n                    aria-describedby=\"basic-addon2\" formControlName=\"shortUrl\" [(ngModel)]=\"shortUrl\">\n                <span class=\"input-group-text\" id=\"basic-addon2\">\n                    <button type=\"button\" class=\"btn btn-success\" (click)=\"onCopy()\">Copy</button>\n                </span>\n            </div>\n    </form>\n</div>\n\n<app-loader *ngIf=\"loading\"></app-loader>"
+module.exports = "<div class=\"container\" style=\"position: relative; top: 100px;\">\n    <div class=\"row\">\n        <div class=\"col-md-12\">\n            <p id=\"homename\">Biturl</p>\n        </div>\n        <div class=\"col-md-12\">\n            <p id=\"tagname\">Professional Url shortener service.</p>\n        </div>\n    </div>\n    <form [formGroup]=\"urlForm\">\n        <div class=\"input-group mb-3\">\n            <input type=\"text\" class=\"form-control\" placeholder=\"Enter Url\" aria-label=\"Recipient's username\"\n                aria-describedby=\"basic-addon2\" formControlName=\"url\" [(ngModel)]=\"urlData.url\">\n            <span class=\"input-group-text\" id=\"basic-addon2\">\n                <button type=\"button\" class=\"btn btn-primary\" (click)=\"onShort()\">Shorten</button>\n            </span>\n        </div>\n        <div class=\"input-group mb-3\" *ngIf=\"shortUrl\">\n            <input type=\"text\" class=\"form-control\" placeholder=\"Enter Url\" aria-label=\"Recipient's username\"\n                aria-describedby=\"basic-addon2\" formControlName=\"shortUrl\" [(ngModel)]=\"shortUrl\">\n            <span class=\"input-group-text\" id=\"basic-addon2\">\n                <button type=\"button\" class=\"btn btn-success\" (click)=\"onCopy()\">Copy</button>\n            </span>\n        </div>\n    </form>\n    <div class=\"row\" style=\"position: relative; top: 100px;\">\n        <div class=\"col-md-4\">\n            <p id=\"value\">3425</p>\n            <p>Total Visitors</p>\n        </div>\n        <div class=\"col-md-4\">\n            <p>1209</p>\n            <p>Total links shorten</p>\n        </div>\n        <div class=\"col-md-4\">\n            <p>203</p>\n            <p>Daily User</p>\n        </div>\n    </div>\n</div>\n\n<app-loader *ngIf=\"loading\"></app-loader>"
 
 /***/ }),
 
@@ -171,7 +171,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var routes = [
-    { path: '', redirectTo: '/', pathMatch: 'full' },
+    { path: '', redirectTo: '/home', pathMatch: 'full' },
     {
         path: '', component: _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_5__["DashboardComponent"], children: [
             { path: 'home', component: _home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"] },
@@ -334,7 +334,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "add_url", function() { return add_url; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "add_contact", function() { return add_contact; });
 var base_url = "https://bitrl.herokuapp.com/v1/";
-// export const base_url = "http://localhost:8081/v1/";
+// export const base_url = "http://localhost:8080/v1/";
 //url
 var add_url = "url/add-url";
 //contact
@@ -520,7 +520,7 @@ var UrlModel = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2hvbWUvaG9tZS5jb21wb25lbnQuY3NzIn0= */"
+module.exports = "p {\n    color: white;\n} \n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaG9tZS9ob21lLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxZQUFZO0FBQ2hCIiwiZmlsZSI6InNyYy9hcHAvaG9tZS9ob21lLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJwIHtcbiAgICBjb2xvcjogd2hpdGU7XG59ICJdfQ== */"
 
 /***/ }),
 
